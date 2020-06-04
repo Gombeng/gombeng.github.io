@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submission</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>Welcome</h1>
+    </header>
+    <!-- header -->
+
+    <!-- navbar -->
+    <nav class="navbar" id="navbar">
+        <ul id="menu">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+    <!-- navbar -->
+
+    
+    <section>
+    <!-- home -->
+        <div class="home" id="home">
+            <h1>hi ! 
+                <br>
+                i'm syahrizal ardana</h1>
+            <p>junior web designer</p>
+        </div>
+    <!-- home -->
+
+    <!-- about -->
+        <div class="about" id="about">
+            <h1>about</h1>
+            <hr>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit ullam temporibus, eligendi optio, beatae praesentium cupiditate earum error modi rerum sint ut in nemo dolorum! Non voluptatum eum eius pariatur.</p>
+        </div>
+    <!-- about -->
+
+    <!-- portfolio -->
+        <div class="portfolio" id="portfolio">
+            <h1>portfolio</h1>
+            <hr>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cupiditate, sed laboriosam vel quae quo nobis dolorum similique inventore sint atque! Laboriosam deleniti quos nemo cupiditate, quod commodi provident quaerat..</p>
+            <!-- image 1 -->
+            <!-- image 2 -->
+            <!-- image 3 -->
+        </div>
+    <!-- portfolio -->
+
+    <!-- contact -->
+        <div class="contact" id="contact">
+            <h1>contact</h1>
+            <hr>
+
+            <p>get in <span>touch</span> with us</p>
+
+            <div class="form">
+                <div class="row">
+                    <div class="col">
+                        <div class="inputbox">
+                            <input type="text" required="required">
+                            <span class="text">full name *</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputbox">
+                            <input type="text" required="required">
+                            <span class="text">e-mail *</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="inputbox textarea">
+                            <textarea></textarea>
+                            <span class="text">tell us everything ...</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <input type="submit" value="send">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- contact -->
+    </section>
+
+    <!-- side -->
+    <aside>
+        <div class="side" id="side">
+            <img src="assets/profile.jpeg" alt="Profile">
+            <h1>syahrizal ardana</h1>
+            <span>h</span>
+            <span>e</span>
+            <span>l</span>
+            <span>l</span>
+            <span>o</span>
+            <span>!</span>
+        </div>
+    </aside>
+    <!-- side -->
+
+    <!-- footer -->
+    <footer>
+        <p>Build by : <a href="https://www.instagram.com/msr.gombeng/">Syharizal Ardana</a></p>
+    </footer>
+    <!-- footer -->
+
+
+
+    <script>
+        window.onscroll = function() {
+            myNav();
+        }
+
+        var navbar = 
+        document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myNav() {
+            if ( window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+</html>
