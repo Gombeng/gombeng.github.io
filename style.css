@@ -1,0 +1,306 @@
+@font-face{
+  font-family: Teko;
+  src: url(../assets/Teko/Teko-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 2px;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background-color: wheat;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 100px;
+  background-color:#222;
+}
+header h1 {
+  text-align: center;
+  padding: 20px;
+  color: wheat;
+  
+}
+/* header */
+
+/* navbar */
+nav {
+  width: 100%;
+  background-color: #222;
+  display: inline-block;
+  height: 40px;
+  overflow: hidden;
+  z-index: 99;
+}
+nav ul li {
+  list-style: none;
+  float: left;
+}
+nav ul li a {
+  text-decoration: none;
+  margin: 0 32px;
+  padding: 0 10px;
+  text-transform: capitalize;
+  color: wheat;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid white;
+  border-radius: 2px;
+}
+.sticky {
+  position: fixed;
+  padding-top: 20px;
+  top: 0;
+  width: 100%;
+}
+.sticky + section + aside{
+  padding-top: 60px;
+}
+/* navbar */
+
+/* section */
+section {
+  width: 70%;
+  float: left;
+}
+/* section */
+
+/* home */
+.home {
+  min-height: 70vh;
+  font-size: 2em;
+  background-color: #333;
+  padding-top: 70px;
+  margin-top: -45px;
+}
+.home h1 {
+  text-transform: capitalize;
+  padding: 10%;
+  color: wheat;
+}
+.home p {
+  font-size: 1em;
+  text-transform: capitalize;
+  padding-left: 10%;
+  color: wheat;
+}
+/* home */
+
+/* side*/
+aside {
+  padding:;
+  float: right;
+  width: 30%;
+  margin-top: -10px;
+}
+.side img{
+  width: 100%;
+  border-radius: 50%;
+}
+.side h1 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.side span {
+  display: block;
+  font-size: 8em;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 40px;
+}
+/* side */
+
+/* about */
+.about {
+  min-height: 50vh;
+  padding-top: 70px;
+  margin-top: -60px;
+}
+.about h1 {
+  margin-left: 10%;
+  text-transform: capitalize;
+  font-size: 2em;
+}
+.about hr {
+  width: 250px;
+  border: 2px solid #222;
+  border-radius: 0 2px 2px 0;
+}
+.about p {
+  padding-top: 20px;
+  margin-left: 10%;
+}
+/* about */
+
+
+
+/* portfolio */
+.portfolio {
+  min-height: 60vh;
+  text-align: right;
+  background-color: #222;
+  color: wheat;
+  padding-top: 70px;
+  margin-top: -70px;
+}
+.portfolio h1 {
+  font-size: 2em;
+  text-transform: capitalize;
+  margin-right: 10%;
+}
+.portfolio hr {
+  width: 250px;
+  border: 2px solid wheat;
+  border-radius: 2px 0 0 2px;
+  float: right;
+}
+.portfolio p {
+  padding-top: 20px;
+  margin-right: 10%;
+}
+/* portfolio */
+
+/* contact */
+.contact {
+  min-height: 80vh;
+  padding-top: 70px;
+  margin-top: -60px;
+}
+.contact h1 {
+  font-size: 2em;
+  text-transform: capitalize;
+  margin-left: 10%;
+}
+.contact p {
+  margin-left: 10%;
+  padding:20px 0;
+  text-transform: capitalize;
+}
+.contact hr {
+  width: 250px;
+  border: 2px solid #222;
+  border-radius: 0 2px 2px 0;
+}
+.contact .form {
+  margin-left: 10%;
+}
+.contact .row {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.contact .row .col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 10px;
+}
+.contact .row .inputbox {
+  position: relative;
+  width: 70%;
+  height: 40px;
+}
+.contact .row .inputbox input,
+.contact .row .inputbox.textarea textarea{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #222;
+}
+.contact .row .inputbox .text {
+  position: absolute;
+  text-transform: capitalize;
+  top: -35px;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0;
+  display: block;
+  pointer-events: none;
+}
+.contact .row .inputbox.textarea {
+  position: relative;
+  width: 70%;
+  height: 100px;
+  padding: 0;
+}
+.contact .row .inputbox.textarea textarea {
+  height: 100%;
+  resize: none;
+}
+.contact .row .inputbox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #222;
+  border-radius: 2px;
+  pointer-events: none;
+}
+.contact .row .col input[type="submit"] {
+  text-transform: capitalize;
+  background-color: #555;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  color: wheat;
+  font-size: 1.5em;
+  border-radius: 25px;
+}
+.contact .row .col input[type="submit"]:hover {
+  background-color: #222;
+  cursor: pointer; ;
+}
+/* contact */
+
+/* footer */
+footer {
+  width: 100%;
+  float: left;
+  background-color: #222;
+  height: 60px;
+  color: wheat;
+  text-align: center;
+  padding-top: 30px;
+}
+footer p a {
+  text-decoration: none;
+  color: #888;
+}
+footer p a:hover {
+  color: wheat;
+}
+/* footer */
+
+
+@media screen and (max-width:1000px){
+  section {
+    width: 100%;
+  }
+  .side span {
+    display: none;
+  }
+  aside {
+    width: 100%;
+  }
+  nav ul li a {
+    padding: 0 20px;
+    margin: 0;
+  }
+}
